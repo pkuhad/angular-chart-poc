@@ -14,7 +14,7 @@ angular.module('helloApp')
 		},
 		{
 			x : "Feb",
-			y: [300, 289, 456]
+			y: [-300, 289, 456]
 		},
 		{
 			x : "March",

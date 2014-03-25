@@ -3,22 +3,110 @@
 <head>
   <meta charset="utf-8">
   <link type="text/css" href="css/style.css" rel="stylesheet" />
+  <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
   <title>Angular Chart</title>
 </head>
 <body>
-  <h2>Angular Chart</h2>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>Angular Table</h2>
+
+  <!---
   <div ng-controller="IndexCtrl">
       <input type="text" ng-model="chart.chartType">
       <div class="chart">
         <div ac-chart="chart.chartType" ac-data="chart.data" ac-config="chart.config" id='chart' class='chart'></div>
       </div>
   </div>
-  <script src="lib/jquery/jquery.js"></script>
-  <script src="lib/angular/angular.js"></script>
-  <script src="lib/d3.min.js"></script>
-  <script src="lib/angular-chart.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/controller.js"></script>
+-->
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Ledger Name</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>1</td>
+      <td><a href="/ledger/display/12/">Buyer Account</a>
+        <span class="label label-info"> Shared </span>
+      </td>
+      <td>Sundry Debtors</td>
+      <td><a href="/ledger/edit/12/">Edit</a></td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td><a href="/ledger/display/34/">Closing Stock</a>
+
+      </td>
+      <td>Final Accounts</td>
+      <td><a href="/ledger/edit/34/">Edit</a></td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td><a href="/ledger/display/33/">Opening Stock</a>
+
+      </td>
+      <td>Final Accounts</td>
+      <td><a href="/ledger/edit/33/">Edit</a></td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td><a href="/ledger/display/32/">Profit &amp; Loss</a>
+
+      </td>
+      <td>Final Accounts</td>
+      <td><a href="/ledger/edit/32/">Edit</a></td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td><a href="/ledger/display/31/">Trading Account</a>
+
+      </td>
+      <td>Final Accounts</td>
+      <td><a href="/ledger/edit/31/">Edit</a></td>
+    </tr>
+
+    <tr>
+      <td>6</td>
+      <td><a href="/ledger/display/30/">Ye sabke saath shared hai to kya hua</a>
+        <span class="label label-info"> Shared </span>
+      </td>
+      <td>Cash-in-hand</td>
+      <td><a href="/ledger/edit/30/">Edit</a></td>
+    </tr>
+
+    <tr>
+      <td>7</td>
+      <td><a href="/ledger/display/35/">ek party account</a>
+        <span class="label label-info"> Shared </span>
+      </td>
+      <td>Sundry Creditors</td>
+      <td><a href="/ledger/edit/35/">Edit</a></td>
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+</div>
+</div>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/d3.min.js"></script>
+<script src="lib/angular-chart.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controller.js"></script>
 </body>
 </html>
