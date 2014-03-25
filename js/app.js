@@ -1,0 +1,2 @@
+angular.module('helloApp', ['angularCharts']);
+
