@@ -1,6 +1,7 @@
 angular.module('helloApp')
 
 .controller('IndexCtrl', ['$scope', function($scope){
+	//Thank you : http://chinmaymk.github.io/angular-charts/
 	$scope.chart = {};
 	$scope.chart.data = {
 		series: ['Sales', 'Income', 'Expense'],
