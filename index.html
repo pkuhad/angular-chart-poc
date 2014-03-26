@@ -23,7 +23,7 @@
 -->
 
 <div ng-controller="TableCtrl">
-<table id='imptable' tabindex=0 class="table table-striped table-bordered" scroll-table>
+<table tabindex=1 class="table table-bordered" scroll-table scroll-table-callback="take_action(row_args)">
   <thead>
     <tr>
       <th>#</th>
@@ -34,7 +34,7 @@
   </thead>
   <tbody>
 
-    <tr>
+    <tr data-row-args="3">
       <td>1</td>
       <td><a href="/ledger/display/12/">Buyer Account</a>
         <span class="label label-info"> Shared </span>
@@ -97,9 +97,18 @@
       <td><a href="/ledger/edit/35/">Edit</a></td>
     </tr>
 
+    <tr>
+      <td>8</td>
+      <td><a href="/ledger/display/35/">ek party account</a>
+        <span class="label label-info"> Shared </span>
+      </td>
+      <td>Sundry Creditors</td>
+      <td><a href="/ledger/edit/35/">Edit</a></td>
+    </tr>
+
   </tbody>
 </table>
-{{last_key_code}}
+{{selected_row}}
 </div>
 </div>
 </div>
